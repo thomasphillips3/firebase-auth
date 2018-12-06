@@ -21,10 +21,11 @@ class SignUpForm extends Component {
       return (
         <View>
             <View style={{ marginBottom: 10 }}>
-                <FormLabel>Enter phone number</FormLabel>
+                <FormLabel>phone number</FormLabel>
                 <FormInput
                     value={this.state.phone}
                     onChangeText={ phone => this.setState({ phone }) }
+                    keyboardType="numeric"
                     />
             </View>
             <Button 
